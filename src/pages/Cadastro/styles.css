@@ -1,0 +1,20 @@
+/* css */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
+
+body {
+  text-align: center;
+}
+
+.field label{
+  display: block;
+}
