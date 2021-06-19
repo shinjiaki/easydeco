@@ -4,6 +4,41 @@
   margin: 0;
   padding: 0;
   font-family: 'Baloo Tammudu 2', cursive;
+  line-height: 1.6;
+}
+
+body {
+  text-align: center;
+}
+
+#logo {
+  height: 44px;
+}
+
+#title {
+  color: #ee7527;
+  margin-top: 20px;
+}
+
+#titleLine {
+  height: 8px;
+  width: 376px;
+  margin: 0 auto;
+  border-radius: 10px;
+  transform: translateY(-16px);
+  background-image: linear-gradient(to right, #e60287, #ee7527);
+}
+
+#subtitle {
+  margin-bottom: 80px; 
+}
+
+.form {
+  border: 3px solid #e60287;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 16px;
 }
 
 input::-ms-reveal,
@@ -11,10 +46,23 @@ input::-ms-clear {
   display: none;
 }
 
-body {
-  text-align: center;
+.field {
+  margin-bottom: 20px;
 }
 
 .field label{
   display: block;
+  font-weight: 700;
+  color: #e60287;
+}
+
+#submit {
+  border: none;
+  padding: 14px 40px 4px 40px;
+  color: #FFF;
+  border-radius: 30px;
+  font-weight: 700;
+  background-color: #ee7527;
+  font-size: 20px;
+  cursor: pointer;
 }
