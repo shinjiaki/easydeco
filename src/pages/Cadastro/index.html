@@ -35,7 +35,13 @@
 
     <div class="field">
       <label for="password">Senha</label>
-      <input type="text" name="password" id="password" onkeyup="enableSubmit()">
+      <input type="password" name="password" id="password" onkeyup="enableSubmit()" autocomplete="off">
+      <span class="material-icons-outlined" id="eye">
+        visibility
+      </span>
+      <span class="material-icons-outlined" id="eyeClosed">
+        visibility_off
+      </span>
     </div>
 
     <div class="passwordFeedback">
@@ -43,7 +49,7 @@
         Senha entre 8 à 14 caracteres.</div>
       <div class="feedback" id="ruleChar"><span class="material-icons-outlined">highlight_off</span>
         Pelo menos <span class="char">um caracter maiúsculo</span>, <span class="char">um minúsculo</span>, <span class="char">um número</span> e <span class="char">um caracter especial (@!*#~)</span>.</div>
-      <div class="feedback" id="ruleSequence"><span class="material-icons-outlined">highlight_off</span>
+      <div class="feedback" id="ruleSequence"><span class="material-icons-outlined">check_circle_outline</span>
         Não é permitido repetir a mesma sequência de caracteres.</div>
     </div>
 
