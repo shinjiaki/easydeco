@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700&display=swap" rel="stylesheet">
   <title>Cadastro EasyDeco</title>
 </head>
@@ -22,21 +25,32 @@
   <form class="form">
     <div class="field">
       <label for="fullname">Nome Completo</label>
-      <input type="text" name="fullname" id="fullname">
+      <input type="text" name="fullname" id="fullname" onkeyup="enableSubmit()">
     </div>
 
     <div class="field">
       <label for="email">E-mail</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" onkeyup="enableSubmit()">
     </div>
 
     <div class="field">
       <label for="password">Senha</label>
-      <input type="password" name="password" id="password">
+      <input type="text" name="password" id="password" onkeyup="enableSubmit()">
     </div>
 
-    <button type="submit" id="submit">Enviar</button>
+    <div class="passwordFeedback">
+      <div class="feedback" id="ruleLength"><span class="material-icons-outlined">highlight_off</span>
+        Senha entre 8 à 14 caracteres.</div>
+      <div class="feedback" id="ruleChar"><span class="material-icons-outlined">highlight_off</span>
+        Pelo menos <span class="char">um caracter maiúsculo</span>, <span class="char">um minúsculo</span>, <span class="char">um número</span> e <span class="char">um caracter especial (@!*#~)</span>.</div>
+      <div class="feedback" id="ruleSequence"><span class="material-icons-outlined">highlight_off</span>
+        Não é permitido repetir a mesma sequência de caracteres.</div>
+    </div>
+
+    <button type="submit" class="submit" id="submit" disabled>Enviar</button>
   </form>
 
+
+  <script src="./index.js"></script>
 </body>
 </html>
