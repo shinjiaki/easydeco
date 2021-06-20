@@ -22,7 +22,7 @@
     <br>
   </div>
 
-  <form class="form">
+  <form class="form" onsubmit="alert('Senha válida! Seu cadastro foi realizado com sucesso.')">
     <div class="field">
       <label for="fullname">Nome Completo</label>
       <input type="text" name="fullname" id="fullname" onkeyup="enableSubmit()">
@@ -30,7 +30,7 @@
 
     <div class="field">
       <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" onkeyup="enableSubmit()">
+      <input type="email" name="email" id="email" onkeyup="enableSubmit()" required>
     </div>
 
     <div class="field">
